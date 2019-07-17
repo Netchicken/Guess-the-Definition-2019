@@ -5,10 +5,12 @@ using System.Threading;
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Webkit;
 using Android.Widget;
+using GuessTheDefinition.Models;
 using Xamarin.Essentials;
 
 
@@ -33,14 +35,24 @@ namespace GuessTheDefinition
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+
+            //https://docs.microsoft.com/en-us/xamarin/essentials/get-started?tabs=windows%2Candroid
+            Xamarin.Essentials.Platform.Init(this, bundle); // add this line to your code, it may also be called: bundle
+            //...
             Log.Info(tag, "Started to generate tag");
             Initialize();
             LoadDic();
-         //   CopyTheDB();
+            //   CopyTheDB();
 
 
         }
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        {
+            //https://docs.microsoft.com/en-us/xamarin/essentials/get-started?tabs=windows%2Candroid
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
 
 
         private void Initialize()
@@ -76,6 +88,7 @@ namespace GuessTheDefinition
             Log.Info(tag, "Click run");
             ButtonClickStuff();
         }
+
         //Button click stuff is called elsewhere as well so had to be under its own method, as it should anyway.
         private void ButtonClickStuff()
         {
@@ -87,6 +100,7 @@ namespace GuessTheDefinition
 
             GenerateQuestion();
         }
+
         /// <summary>
         /// Radio button click event
         /// </summary>

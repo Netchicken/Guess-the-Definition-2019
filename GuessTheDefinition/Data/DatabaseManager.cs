@@ -1,24 +1,14 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
-using System.Linq;
-using Android.Content;
+using System.IO;
 using Android.Util;
-using Android.Widget;
+using GuessTheDefinition.Models;
 using SQLite;
-using Environment = Android.OS.Environment;
-using Xamarin.Essentials;
 
-namespace GuessTheDefinition
+namespace GuessTheDefinition.Data
 {
     public class DatabaseManager
     {
-
-        //https://components.xamarin.com/gettingstarted/sqlite-net 
-        //https://github.com/praeclarum/sqlite-net
-        //https://developer.xamarin.com/guides/cross-platform/application_fundamentals/data/part_3_using_sqlite_orm/
-
-        //https://github.com/praeclarum/sqlite-net/blob/master/src/SQLite.cs
 
 
         //YOUR CLASS NAME MUST BE YOUR TABLE NAME
@@ -53,8 +43,8 @@ namespace GuessTheDefinition
 
             databaseName = "Scoring.sqlite";
             databasePath = Path.Combine(Xamarin.Essentials.FileSystem.AppDataDirectory, databaseName); // Assets folder
-            
-          
+
+
             if (databasePath != null)
             {
                 conn = new SQLiteConnection(databasePath);

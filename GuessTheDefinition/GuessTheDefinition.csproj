@@ -113,18 +113,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddItem.cs" />
+    <Compile Include="Business\Operations.cs" />
     <Compile Include="CustomMenu.cs" />
-    <Compile Include="DataAdapter.cs" />
-    <Compile Include="DatabaseManager.cs" />
+    <Compile Include="Data\DataAdapter.cs" />
+    <Compile Include="Data\DatabaseManager.cs" />
     <Compile Include="EditItem.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scores.cs" />
-    <Compile Include="scoring.cs" />
+    <Compile Include="Models\scoring.cs" />
     <Compile Include="Web.cs" />
-    <Compile Include="Words.cs" />
+    <Compile Include="Models\Words.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Scoring.sqlite">
@@ -218,6 +219,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon3.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.28.0.0.1\build\monoandroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.28.0.0.1\build\monoandroid80\Xamarin.Android.Support.Annotations.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

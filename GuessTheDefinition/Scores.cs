@@ -8,10 +8,14 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Util;
+using GuessTheDefinition.Data;
+using GuessTheDefinition.Models;
 
-namespace GuessTheDefinition {
+namespace GuessTheDefinition
+{
     [Activity(Label = "High Scores", MainLauncher = false, Icon = "@drawable/DictionaryIcon", Theme = "@android:style/Theme.Holo.Light")]
-    public class Scores : Activity {
+    public class Scores : Activity
+    {
         //we need this so we can copy the DB across to the phone or emulator......
 
         // scoring myScoring = new scoring();
@@ -21,7 +25,8 @@ namespace GuessTheDefinition {
         private Button BackToGame;
         DatabaseManager myDbManager = new DatabaseManager();
 
-        protected override void OnCreate(Bundle bundle) {
+        protected override void OnCreate(Bundle bundle)
+        {
             base.OnCreate(bundle);
 
             //  get the score passed across from the other project
@@ -39,21 +44,24 @@ namespace GuessTheDefinition {
             ListScores.ItemClick += OnListScores_Click;
             BackToGame.Click += BackToGame_Click;
 
-            }
+        }
 
-        private void BackToGame_Click(object sender, EventArgs e) {
+        private void BackToGame_Click(object sender, EventArgs e)
+        {
             StartActivity(typeof(MainActivity));
             this.Finish();
-            }
+        }
 
 
         //Adds Add to the Menu in the top right of your screen.
-        public override bool OnCreateOptionsMenu(IMenu menu) {
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
             menu.Add("Add");
             return base.OnPrepareOptionsMenu(menu);
-            }
+        }
 
-        private void OnListScores_Click(object sender, AdapterView.ItemClickEventArgs e) {
+        private void OnListScores_Click(object sender, AdapterView.ItemClickEventArgs e)
+        {
             //get the list entry at the position clicked on to EDIT THE ENTRY
             var ScoreItem = myList[e.Position];
 
@@ -70,29 +78,32 @@ namespace GuessTheDefinition {
 
             StartActivity(edititem);
             this.Finish();
-            }
+        }
 
 
         //When you choose Add from the Menu run the Add Activity
-        public override bool OnOptionsItemSelected(IMenuItem item) {
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
             var itemTitle = item.TitleFormatted.ToString();
 
-            switch (itemTitle) {
+            switch (itemTitle)
+            {
                 case "Add":
                     StartActivity(typeof(AddItem));
                     this.Finish();
                     break;
-                }
-            return base.OnOptionsItemSelected(item);
             }
+            return base.OnOptionsItemSelected(item);
+        }
 
         //Basically reload stuff when the app resumes operation after being pauused
-        protected override void OnResume() {
+        protected override void OnResume()
+        {
             base.OnResume();
             myDbManager = new DatabaseManager();
             myList = myDbManager.ViewAll();
             ListScores.Adapter = new DataAdapter(this, myList);
-            }
-
         }
+
     }
+}

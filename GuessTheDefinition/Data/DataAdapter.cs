@@ -2,8 +2,9 @@
 using Android.App;
 using Android.Views;
 using Android.Widget;
+using GuessTheDefinition.Models;
 
-namespace GuessTheDefinition
+namespace GuessTheDefinition.Data
 {
     public class DataAdapter : BaseAdapter<scoring>
     {

@@ -10,11 +10,15 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using GuessTheDefinition.Data;
+using GuessTheDefinition.Models;
 using Javax.Security.Auth;
 
-namespace GuessTheDefinition {
+namespace GuessTheDefinition
+{
     [Activity(Label = "Add your Score")]
-    public class AddItem : Activity {
+    public class AddItem : Activity
+    {
         //  private Words mywords;
         Button btnAdd;
         EditText txtAddScore;
@@ -24,7 +28,8 @@ namespace GuessTheDefinition {
         DatabaseManager db = new DatabaseManager();
         private string tag = "aaaaa";
 
-        protected override void OnCreate(Bundle bundle) {
+        protected override void OnCreate(Bundle bundle)
+        {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.AddScore);
 
@@ -53,21 +58,24 @@ namespace GuessTheDefinition {
 
             btnAdd = FindViewById<Button>(Resource.Id.btnAdd);
             btnAdd.Click += OnBtnAddClick;
-            }
+        }
 
-        private void OnBtnAddClick(object sender, EventArgs e) {
+        private void OnBtnAddClick(object sender, EventArgs e)
+        {
             Log.Info(tag, "OnBtnAddClick");
 
             //if you forget to add a name remind the person
-            if (txtAddName.Text == "") {
+            if (txtAddName.Text == "")
+            {
                 Toast.MakeText(this, "Please add Your Name and ty again. ", ToastLength.Long).Show();
                 //get abusive
                 txtAddName.Text = "Anonymous Coward";
                 return;
-                }
+            }
 
             //if all the fields have something in them might be redundant with other checks
-            if (txtAddName.Text != "" && Words.Score.ToString() != "" && Words.Word != "") {
+            if (txtAddName.Text != "" && Words.Score.ToString() != "" && Words.Word != "")
+            {
 
                 Words.Name = txtAddName.Text;
                 db.AddItem();
@@ -75,10 +83,10 @@ namespace GuessTheDefinition {
                 this.Finish();
                 StartActivity(typeof(Scores));
 
-                }
-            Toast.MakeText(this, "Borked! Name = " + Words.Name + " Score = " + Words.Score + " Word = " + Words.Word, ToastLength.Long).Show();
             }
-
+            Toast.MakeText(this, "Borked! Name = " + Words.Name + " Score = " + Words.Score + " Word = " + Words.Word, ToastLength.Long).Show();
         }
+
     }
+}
 

@@ -11,10 +11,13 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using GuessTheDefinition.Data;
 
-namespace GuessTheDefinition {
+namespace GuessTheDefinition
+{
     [Activity(Label = "Edit Your Score   ... Really?")]
-    public class EditItem : Activity {
+    public class EditItem : Activity
+    {
 
         int ListId;
         string Name;
@@ -27,7 +30,8 @@ namespace GuessTheDefinition {
         Button btnDelete;
         DatabaseManager objDb;
         private string tag = "aaaaa";
-        protected override void OnCreate(Bundle bundle) {
+        protected override void OnCreate(Bundle bundle)
+        {
             base.OnCreate(bundle);
 
             // Create your application here
@@ -55,33 +59,41 @@ namespace GuessTheDefinition {
             txtWord.Text = Word;
 
             objDb = new DatabaseManager();
-            }
+        }
 
-        public void OnBtnEditClick(object sender, EventArgs e) {
-            try {
+        public void OnBtnEditClick(object sender, EventArgs e)
+        {
+            try
+            {
                 //we need the txt fields so that you can edit them in the text box
                 int score = Convert.ToInt16(txtScore.Text);
                 objDb.EditItem(txtName.Text, score, txtWord.Text, ListId);
                 //Toast.MakeText(this, "Score Edited", ToastLength.Long).Show();
                 this.Finish();
                 StartActivity(typeof(Scores));
-                } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 Log.Info(tag, "Edit Error:" + ex.Message.ToString());
                 Toast.MakeText(this, "A field is missing, Please add it", ToastLength.Long).Show();
-                }
             }
+        }
 
-        public void OnBtnDeleteClick(object sender, EventArgs e) {
-            try {
+        public void OnBtnDeleteClick(object sender, EventArgs e)
+        {
+            try
+            {
                 objDb.DeleteItem(ListId);
                 Toast.MakeText(this, "Score Deleted", ToastLength.Long).Show();
                 this.Finish();
                 StartActivity(typeof(Scores));
-                } catch (Exception ex) {
-                Log.Info(tag, "Delete Error listid = " + ListId + " " + ex.Message.ToString());
-                }
             }
-
+            catch (Exception ex)
+            {
+                Log.Info(tag, "Delete Error listid = " + ListId + " " + ex.Message.ToString());
+            }
         }
+
     }
+}
 
