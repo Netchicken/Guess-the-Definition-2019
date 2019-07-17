@@ -9,7 +9,8 @@ using Android.Util;
 using Android.Views;
 using Android.Webkit;
 using Android.Widget;
-using SatelliteMenu;
+using Xamarin.Essentials;
+
 
 namespace GuessTheDefinition
 {
@@ -35,7 +36,7 @@ namespace GuessTheDefinition
             Log.Info(tag, "Started to generate tag");
             Initialize();
             LoadDic();
-            CopyTheDB();
+         //   CopyTheDB();
 
 
         }
@@ -53,7 +54,7 @@ namespace GuessTheDefinition
             RB4 = FindViewById<RadioButton>(Resource.Id.RB4);
             Word = FindViewById<TextView>(Resource.Id.Word);
 
-            var menu = FindViewById<SatelliteMenuButton>(Resource.Id.menu);
+            //   var menu = FindViewById<SatelliteMenuButton>(Resource.Id.menu);
 
             btnPlay.Click += btnClick;
             //All the radiobuttons go to the same click event

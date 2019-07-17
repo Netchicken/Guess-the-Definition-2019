@@ -5,20 +5,5 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="@android:color/transparent">
-    <satellitemenu.SatelliteMenuButton
-        pop:speed="250"
-        pop:radius="200dp"
-        android:id="@+id/menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|left"
-        android:layout_margin="8dp">
-        <ImageView
-            android:id="@+id/popoutMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/menu"
-            android:layout_gravity="bottom|left"
-            android:contentDescription="@string/empty" />
-    </satellitemenu.SatelliteMenuButton>
+   
 </FrameLayout>

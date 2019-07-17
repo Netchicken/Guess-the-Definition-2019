@@ -26,28 +26,6 @@ namespace GuessTheDefinition
 		
 		public static void UpdateIdValues()
 		{
-			global::SatelliteMenu.Resource.Animation.popoutMenuItemAnticipateInterpolator = global::GuessTheDefinition.Resource.Animation.popoutMenuItemAnticipateInterpolator;
-			global::SatelliteMenu.Resource.Animation.popoutMenuItemClickAnim = global::GuessTheDefinition.Resource.Animation.popoutMenuItemClickAnim;
-			global::SatelliteMenu.Resource.Animation.popoutMenuItemClickInterpolator = global::GuessTheDefinition.Resource.Animation.popoutMenuItemClickInterpolator;
-			global::SatelliteMenu.Resource.Animation.popoutMenuItemInRotateInterpolator = global::GuessTheDefinition.Resource.Animation.popoutMenuItemInRotateInterpolator;
-			global::SatelliteMenu.Resource.Animation.popoutMenuItemOutRotateInterpolator = global::GuessTheDefinition.Resource.Animation.popoutMenuItemOutRotateInterpolator;
-			global::SatelliteMenu.Resource.Animation.popoutMenuItemOvershootInterpolator = global::GuessTheDefinition.Resource.Animation.popoutMenuItemOvershootInterpolator;
-			global::SatelliteMenu.Resource.Animation.popoutMenuRotateLeftAnim = global::GuessTheDefinition.Resource.Animation.popoutMenuRotateLeftAnim;
-			global::SatelliteMenu.Resource.Animation.popoutMenuRotateRight = global::GuessTheDefinition.Resource.Animation.popoutMenuRotateRight;
-			global::SatelliteMenu.Resource.Attribute.closeOnClick = global::GuessTheDefinition.Resource.Attribute.closeOnClick;
-			global::SatelliteMenu.Resource.Attribute.itemsAngle = global::GuessTheDefinition.Resource.Attribute.itemsAngle;
-			global::SatelliteMenu.Resource.Attribute.mainImage = global::GuessTheDefinition.Resource.Attribute.mainImage;
-			global::SatelliteMenu.Resource.Attribute.radius = global::GuessTheDefinition.Resource.Attribute.radius;
-			global::SatelliteMenu.Resource.Attribute.speed = global::GuessTheDefinition.Resource.Attribute.speed;
-			global::SatelliteMenu.Resource.Id.popoutMenuItem = global::GuessTheDefinition.Resource.Id.popoutMenuItem;
-			global::SatelliteMenu.Resource.Layout.popoutMenuItem = global::GuessTheDefinition.Resource.Layout.popoutMenuItem;
-			global::SatelliteMenu.Resource.String.empty = global::GuessTheDefinition.Resource.String.empty;
-			global::SatelliteMenu.Resource.Styleable.SatelliteMenu = global::GuessTheDefinition.Resource.Styleable.SatelliteMenu;
-			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_closeOnClick = global::GuessTheDefinition.Resource.Styleable.SatelliteMenu_closeOnClick;
-			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_itemsAngle = global::GuessTheDefinition.Resource.Styleable.SatelliteMenu_itemsAngle;
-			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_mainImage = global::GuessTheDefinition.Resource.Styleable.SatelliteMenu_mainImage;
-			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_radius = global::GuessTheDefinition.Resource.Styleable.SatelliteMenu_radius;
-			global::SatelliteMenu.Resource.Styleable.SatelliteMenu_speed = global::GuessTheDefinition.Resource.Styleable.SatelliteMenu_speed;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::GuessTheDefinition.Resource.Attribute.font;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::GuessTheDefinition.Resource.Attribute.fontProviderAuthority;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderCerts = global::GuessTheDefinition.Resource.Attribute.fontProviderCerts;
@@ -148,87 +126,35 @@ namespace GuessTheDefinition
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontWeight = global::GuessTheDefinition.Resource.Styleable.FontFamilyFont_fontWeight;
 		}
 		
-		public partial class Animation
-		{
-			
-			// aapt resource value: 0x7F010000
-			public const int popoutMenuItemAnticipateInterpolator = 2130771968;
-			
-			// aapt resource value: 0x7F010001
-			public const int popoutMenuItemClickAnim = 2130771969;
-			
-			// aapt resource value: 0x7F010002
-			public const int popoutMenuItemClickInterpolator = 2130771970;
-			
-			// aapt resource value: 0x7F010003
-			public const int popoutMenuItemInRotateInterpolator = 2130771971;
-			
-			// aapt resource value: 0x7F010004
-			public const int popoutMenuItemOutRotateInterpolator = 2130771972;
-			
-			// aapt resource value: 0x7F010005
-			public const int popoutMenuItemOvershootInterpolator = 2130771973;
-			
-			// aapt resource value: 0x7F010006
-			public const int popoutMenuRotateLeftAnim = 2130771974;
-			
-			// aapt resource value: 0x7F010007
-			public const int popoutMenuRotateRight = 2130771975;
-			
-			static Animation()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Animation()
-			{
-			}
-		}
-		
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7F020000
-			public const int closeOnClick = 2130837504;
+			// aapt resource value: 0x7F010000
+			public const int font = 2130771968;
 			
-			// aapt resource value: 0x7F020001
-			public const int font = 2130837505;
+			// aapt resource value: 0x7F010001
+			public const int fontProviderAuthority = 2130771969;
 			
-			// aapt resource value: 0x7F020002
-			public const int fontProviderAuthority = 2130837506;
+			// aapt resource value: 0x7F010002
+			public const int fontProviderCerts = 2130771970;
 			
-			// aapt resource value: 0x7F020003
-			public const int fontProviderCerts = 2130837507;
+			// aapt resource value: 0x7F010003
+			public const int fontProviderFetchStrategy = 2130771971;
 			
-			// aapt resource value: 0x7F020004
-			public const int fontProviderFetchStrategy = 2130837508;
+			// aapt resource value: 0x7F010004
+			public const int fontProviderFetchTimeout = 2130771972;
 			
-			// aapt resource value: 0x7F020005
-			public const int fontProviderFetchTimeout = 2130837509;
+			// aapt resource value: 0x7F010005
+			public const int fontProviderPackage = 2130771973;
 			
-			// aapt resource value: 0x7F020006
-			public const int fontProviderPackage = 2130837510;
+			// aapt resource value: 0x7F010006
+			public const int fontProviderQuery = 2130771974;
 			
-			// aapt resource value: 0x7F020007
-			public const int fontProviderQuery = 2130837511;
+			// aapt resource value: 0x7F010007
+			public const int fontStyle = 2130771975;
 			
-			// aapt resource value: 0x7F020008
-			public const int fontStyle = 2130837512;
-			
-			// aapt resource value: 0x7F020009
-			public const int fontWeight = 2130837513;
-			
-			// aapt resource value: 0x7F02000A
-			public const int itemsAngle = 2130837514;
-			
-			// aapt resource value: 0x7F02000B
-			public const int mainImage = 2130837515;
-			
-			// aapt resource value: 0x7F02000C
-			public const int radius = 2130837516;
-			
-			// aapt resource value: 0x7F02000D
-			public const int speed = 2130837517;
+			// aapt resource value: 0x7F010008
+			public const int fontWeight = 2130771976;
 			
 			static Attribute()
 			{
@@ -243,8 +169,8 @@ namespace GuessTheDefinition
 		public partial class Boolean
 		{
 			
-			// aapt resource value: 0x7F030000
-			public const int abc_action_bar_embed_tabs = 2130903040;
+			// aapt resource value: 0x7F020000
+			public const int abc_action_bar_embed_tabs = 2130837504;
 			
 			static Boolean()
 			{
@@ -259,23 +185,23 @@ namespace GuessTheDefinition
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7F040000
-			public const int notification_action_color_filter = 2130968576;
+			// aapt resource value: 0x7F030000
+			public const int notification_action_color_filter = 2130903040;
 			
-			// aapt resource value: 0x7F040001
-			public const int notification_icon_bg_color = 2130968577;
+			// aapt resource value: 0x7F030001
+			public const int notification_icon_bg_color = 2130903041;
 			
-			// aapt resource value: 0x7F040002
-			public const int ripple_material_light = 2130968578;
+			// aapt resource value: 0x7F030002
+			public const int ripple_material_light = 2130903042;
 			
-			// aapt resource value: 0x7F040003
-			public const int secondary_text_default_material_light = 2130968579;
+			// aapt resource value: 0x7F030003
+			public const int secondary_text_default_material_light = 2130903043;
 			
-			// aapt resource value: 0x7F040004
-			public const int theme_custom_background = 2130968580;
+			// aapt resource value: 0x7F030004
+			public const int theme_custom_background = 2130903044;
 			
-			// aapt resource value: 0x7F040005
-			public const int theme_holo_light_background = 2130968581;
+			// aapt resource value: 0x7F030005
+			public const int theme_holo_light_background = 2130903045;
 			
 			static Color()
 			{
@@ -290,65 +216,65 @@ namespace GuessTheDefinition
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7F050000
-			public const int compat_button_inset_horizontal_material = 2131034112;
+			// aapt resource value: 0x7F040000
+			public const int compat_button_inset_horizontal_material = 2130968576;
 			
-			// aapt resource value: 0x7F050001
-			public const int compat_button_inset_vertical_material = 2131034113;
+			// aapt resource value: 0x7F040001
+			public const int compat_button_inset_vertical_material = 2130968577;
 			
-			// aapt resource value: 0x7F050002
-			public const int compat_button_padding_horizontal_material = 2131034114;
+			// aapt resource value: 0x7F040002
+			public const int compat_button_padding_horizontal_material = 2130968578;
 			
-			// aapt resource value: 0x7F050003
-			public const int compat_button_padding_vertical_material = 2131034115;
+			// aapt resource value: 0x7F040003
+			public const int compat_button_padding_vertical_material = 2130968579;
 			
-			// aapt resource value: 0x7F050004
-			public const int compat_control_corner_material = 2131034116;
+			// aapt resource value: 0x7F040004
+			public const int compat_control_corner_material = 2130968580;
 			
-			// aapt resource value: 0x7F050005
-			public const int notification_action_icon_size = 2131034117;
+			// aapt resource value: 0x7F040005
+			public const int notification_action_icon_size = 2130968581;
 			
-			// aapt resource value: 0x7F050006
-			public const int notification_action_text_size = 2131034118;
+			// aapt resource value: 0x7F040006
+			public const int notification_action_text_size = 2130968582;
 			
-			// aapt resource value: 0x7F050007
-			public const int notification_big_circle_margin = 2131034119;
+			// aapt resource value: 0x7F040007
+			public const int notification_big_circle_margin = 2130968583;
 			
-			// aapt resource value: 0x7F050008
-			public const int notification_content_margin_start = 2131034120;
+			// aapt resource value: 0x7F040008
+			public const int notification_content_margin_start = 2130968584;
 			
-			// aapt resource value: 0x7F050009
-			public const int notification_large_icon_height = 2131034121;
+			// aapt resource value: 0x7F040009
+			public const int notification_large_icon_height = 2130968585;
 			
-			// aapt resource value: 0x7F05000A
-			public const int notification_large_icon_width = 2131034122;
+			// aapt resource value: 0x7F04000A
+			public const int notification_large_icon_width = 2130968586;
 			
-			// aapt resource value: 0x7F05000B
-			public const int notification_main_column_padding_top = 2131034123;
+			// aapt resource value: 0x7F04000B
+			public const int notification_main_column_padding_top = 2130968587;
 			
-			// aapt resource value: 0x7F05000C
-			public const int notification_media_narrow_margin = 2131034124;
+			// aapt resource value: 0x7F04000C
+			public const int notification_media_narrow_margin = 2130968588;
 			
-			// aapt resource value: 0x7F05000D
-			public const int notification_right_icon_size = 2131034125;
+			// aapt resource value: 0x7F04000D
+			public const int notification_right_icon_size = 2130968589;
 			
-			// aapt resource value: 0x7F05000E
-			public const int notification_right_side_padding_top = 2131034126;
+			// aapt resource value: 0x7F04000E
+			public const int notification_right_side_padding_top = 2130968590;
 			
-			// aapt resource value: 0x7F05000F
-			public const int notification_small_icon_background_padding = 2131034127;
+			// aapt resource value: 0x7F04000F
+			public const int notification_small_icon_background_padding = 2130968591;
 			
-			// aapt resource value: 0x7F050010
-			public const int notification_small_icon_size_as_large = 2131034128;
+			// aapt resource value: 0x7F040010
+			public const int notification_small_icon_size_as_large = 2130968592;
 			
-			// aapt resource value: 0x7F050011
-			public const int notification_subtext_size = 2131034129;
+			// aapt resource value: 0x7F040011
+			public const int notification_subtext_size = 2130968593;
 			
-			// aapt resource value: 0x7F050012
-			public const int notification_top_pad = 2131034130;
+			// aapt resource value: 0x7F040012
+			public const int notification_top_pad = 2130968594;
 			
-			// aapt resource value: 0x7F050013
-			public const int notification_top_pad_large_text = 2131034131;
+			// aapt resource value: 0x7F040013
+			public const int notification_top_pad_large_text = 2130968595;
 			
 			static Dimension()
 			{
@@ -363,89 +289,89 @@ namespace GuessTheDefinition
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7F060000
-			public const int arrow = 2131099648;
+			// aapt resource value: 0x7F050000
+			public const int arrow = 2131034112;
 			
-			// aapt resource value: 0x7F060001
-			public const int arrowright = 2131099649;
+			// aapt resource value: 0x7F050001
+			public const int arrowright = 2131034113;
 			
-			// aapt resource value: 0x7F060002
-			public const int bgimage = 2131099650;
+			// aapt resource value: 0x7F050002
+			public const int bgimage = 2131034114;
 			
-			// aapt resource value: 0x7F060003
-			public const int DictionaryIcon = 2131099651;
+			// aapt resource value: 0x7F050003
+			public const int DictionaryIcon = 2131034115;
 			
-			// aapt resource value: 0x7F060004
-			public const int gradient_bg = 2131099652;
+			// aapt resource value: 0x7F050004
+			public const int gradient_bg = 2131034116;
 			
-			// aapt resource value: 0x7F060005
-			public const int gradient_bg_hover = 2131099653;
+			// aapt resource value: 0x7F050005
+			public const int gradient_bg_hover = 2131034117;
 			
-			// aapt resource value: 0x7F060007
-			public const int Icon = 2131099655;
+			// aapt resource value: 0x7F050007
+			public const int Icon = 2131034119;
 			
-			// aapt resource value: 0x7F060008
-			public const int icon1 = 2131099656;
+			// aapt resource value: 0x7F050008
+			public const int icon1 = 2131034120;
 			
-			// aapt resource value: 0x7F060009
-			public const int icon2 = 2131099657;
+			// aapt resource value: 0x7F050009
+			public const int icon2 = 2131034121;
 			
-			// aapt resource value: 0x7F06000A
-			public const int icon3 = 2131099658;
+			// aapt resource value: 0x7F05000A
+			public const int icon3 = 2131034122;
 			
-			// aapt resource value: 0x7F06000B
-			public const int icon4 = 2131099659;
+			// aapt resource value: 0x7F05000B
+			public const int icon4 = 2131034123;
 			
-			// aapt resource value: 0x7F06000C
-			public const int icon5 = 2131099660;
+			// aapt resource value: 0x7F05000C
+			public const int icon5 = 2131034124;
 			
-			// aapt resource value: 0x7F06000D
-			public const int icon6 = 2131099661;
+			// aapt resource value: 0x7F05000D
+			public const int icon6 = 2131034125;
 			
-			// aapt resource value: 0x7F060006
-			public const int ic_more_horiz_black_18dp = 2131099654;
+			// aapt resource value: 0x7F050006
+			public const int ic_more_horiz_black_18dp = 2131034118;
 			
-			// aapt resource value: 0x7F06000E
-			public const int list_selector = 2131099662;
+			// aapt resource value: 0x7F05000E
+			public const int list_selector = 2131034126;
 			
-			// aapt resource value: 0x7F06000F
-			public const int menu = 2131099663;
+			// aapt resource value: 0x7F05000F
+			public const int menu = 2131034127;
 			
-			// aapt resource value: 0x7F060010
-			public const int notification_action_background = 2131099664;
+			// aapt resource value: 0x7F050010
+			public const int notification_action_background = 2131034128;
 			
-			// aapt resource value: 0x7F060011
-			public const int notification_bg = 2131099665;
+			// aapt resource value: 0x7F050011
+			public const int notification_bg = 2131034129;
 			
-			// aapt resource value: 0x7F060012
-			public const int notification_bg_low = 2131099666;
+			// aapt resource value: 0x7F050012
+			public const int notification_bg_low = 2131034130;
 			
-			// aapt resource value: 0x7F060013
-			public const int notification_bg_low_normal = 2131099667;
+			// aapt resource value: 0x7F050013
+			public const int notification_bg_low_normal = 2131034131;
 			
-			// aapt resource value: 0x7F060014
-			public const int notification_bg_low_pressed = 2131099668;
+			// aapt resource value: 0x7F050014
+			public const int notification_bg_low_pressed = 2131034132;
 			
-			// aapt resource value: 0x7F060015
-			public const int notification_bg_normal = 2131099669;
+			// aapt resource value: 0x7F050015
+			public const int notification_bg_normal = 2131034133;
 			
-			// aapt resource value: 0x7F060016
-			public const int notification_bg_normal_pressed = 2131099670;
+			// aapt resource value: 0x7F050016
+			public const int notification_bg_normal_pressed = 2131034134;
 			
-			// aapt resource value: 0x7F060017
-			public const int notification_icon_background = 2131099671;
+			// aapt resource value: 0x7F050017
+			public const int notification_icon_background = 2131034135;
 			
-			// aapt resource value: 0x7F060018
-			public const int notification_template_icon_bg = 2131099672;
+			// aapt resource value: 0x7F050018
+			public const int notification_template_icon_bg = 2131034136;
 			
-			// aapt resource value: 0x7F060019
-			public const int notification_template_icon_low_bg = 2131099673;
+			// aapt resource value: 0x7F050019
+			public const int notification_template_icon_low_bg = 2131034137;
 			
-			// aapt resource value: 0x7F06001A
-			public const int notification_tile_bg = 2131099674;
+			// aapt resource value: 0x7F05001A
+			public const int notification_tile_bg = 2131034138;
 			
-			// aapt resource value: 0x7F06001B
-			public const int notify_panel_notification_icon_bg = 2131099675;
+			// aapt resource value: 0x7F05001B
+			public const int notify_panel_notification_icon_bg = 2131034139;
 			
 			static Drawable()
 			{
@@ -460,170 +386,161 @@ namespace GuessTheDefinition
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F07000C
-			public const int actions = 2131165196;
+			// aapt resource value: 0x7F06000C
+			public const int actions = 2131099660;
 			
-			// aapt resource value: 0x7F070008
-			public const int action_container = 2131165192;
+			// aapt resource value: 0x7F060008
+			public const int action_container = 2131099656;
 			
-			// aapt resource value: 0x7F070009
-			public const int action_divider = 2131165193;
+			// aapt resource value: 0x7F060009
+			public const int action_divider = 2131099657;
 			
-			// aapt resource value: 0x7F07000A
-			public const int action_image = 2131165194;
+			// aapt resource value: 0x7F06000A
+			public const int action_image = 2131099658;
 			
-			// aapt resource value: 0x7F07000B
-			public const int action_text = 2131165195;
+			// aapt resource value: 0x7F06000B
+			public const int action_text = 2131099659;
 			
-			// aapt resource value: 0x7F07000D
-			public const int async = 2131165197;
+			// aapt resource value: 0x7F06000D
+			public const int async = 2131099661;
 			
-			// aapt resource value: 0x7F07000E
-			public const int blocking = 2131165198;
+			// aapt resource value: 0x7F06000E
+			public const int blocking = 2131099662;
 			
-			// aapt resource value: 0x7F07000F
-			public const int btnAdd = 2131165199;
+			// aapt resource value: 0x7F06000F
+			public const int btnAdd = 2131099663;
 			
-			// aapt resource value: 0x7F070000
-			public const int BtnBackToGame = 2131165184;
+			// aapt resource value: 0x7F060000
+			public const int BtnBackToGame = 2131099648;
 			
-			// aapt resource value: 0x7F070010
-			public const int btnDelete = 2131165200;
+			// aapt resource value: 0x7F060010
+			public const int btnDelete = 2131099664;
 			
-			// aapt resource value: 0x7F070011
-			public const int btnEdit = 2131165201;
+			// aapt resource value: 0x7F060011
+			public const int btnEdit = 2131099665;
 			
-			// aapt resource value: 0x7F070012
-			public const int chronometer = 2131165202;
+			// aapt resource value: 0x7F060012
+			public const int chronometer = 2131099666;
 			
-			// aapt resource value: 0x7F070013
-			public const int forever = 2131165203;
+			// aapt resource value: 0x7F060013
+			public const int forever = 2131099667;
 			
-			// aapt resource value: 0x7F070014
-			public const int icon = 2131165204;
+			// aapt resource value: 0x7F060014
+			public const int icon = 2131099668;
 			
-			// aapt resource value: 0x7F070015
-			public const int icon_group = 2131165205;
+			// aapt resource value: 0x7F060015
+			public const int icon_group = 2131099669;
 			
-			// aapt resource value: 0x7F070001
-			public const int ImgPointer = 2131165185;
+			// aapt resource value: 0x7F060001
+			public const int ImgPointer = 2131099649;
 			
-			// aapt resource value: 0x7F070016
-			public const int info = 2131165206;
+			// aapt resource value: 0x7F060016
+			public const int info = 2131099670;
 			
-			// aapt resource value: 0x7F070017
-			public const int italic = 2131165207;
+			// aapt resource value: 0x7F060017
+			public const int italic = 2131099671;
 			
-			// aapt resource value: 0x7F070018
-			public const int lblName = 2131165208;
+			// aapt resource value: 0x7F060018
+			public const int lblName = 2131099672;
 			
-			// aapt resource value: 0x7F070019
-			public const int lblScore = 2131165209;
+			// aapt resource value: 0x7F060019
+			public const int lblScore = 2131099673;
 			
-			// aapt resource value: 0x7F07001A
-			public const int lblWord = 2131165210;
+			// aapt resource value: 0x7F06001A
+			public const int lblWord = 2131099674;
 			
-			// aapt resource value: 0x7F07001B
-			public const int line1 = 2131165211;
+			// aapt resource value: 0x7F06001B
+			public const int line1 = 2131099675;
 			
-			// aapt resource value: 0x7F07001C
-			public const int line3 = 2131165212;
+			// aapt resource value: 0x7F06001C
+			public const int line3 = 2131099676;
 			
-			// aapt resource value: 0x7F07001D
-			public const int linearLayout1 = 2131165213;
+			// aapt resource value: 0x7F06001D
+			public const int linearLayout1 = 2131099677;
 			
-			// aapt resource value: 0x7F07001E
-			public const int listView1 = 2131165214;
+			// aapt resource value: 0x7F06001E
+			public const int listView1 = 2131099678;
 			
-			// aapt resource value: 0x7F07001F
-			public const int menu = 2131165215;
+			// aapt resource value: 0x7F060002
+			public const int MyButton = 2131099650;
 			
-			// aapt resource value: 0x7F070002
-			public const int MyButton = 2131165186;
+			// aapt resource value: 0x7F06001F
+			public const int normal = 2131099679;
 			
-			// aapt resource value: 0x7F070020
-			public const int normal = 2131165216;
+			// aapt resource value: 0x7F060020
+			public const int notification_background = 2131099680;
 			
-			// aapt resource value: 0x7F070021
-			public const int notification_background = 2131165217;
+			// aapt resource value: 0x7F060021
+			public const int notification_main_column = 2131099681;
 			
-			// aapt resource value: 0x7F070022
-			public const int notification_main_column = 2131165218;
+			// aapt resource value: 0x7F060022
+			public const int notification_main_column_container = 2131099682;
 			
-			// aapt resource value: 0x7F070023
-			public const int notification_main_column_container = 2131165219;
+			// aapt resource value: 0x7F060023
+			public const int radioGroup1 = 2131099683;
 			
-			// aapt resource value: 0x7F070024
-			public const int popoutMenu = 2131165220;
+			// aapt resource value: 0x7F060003
+			public const int RB1 = 2131099651;
 			
-			// aapt resource value: 0x7F070025
-			public const int popoutMenuItem = 2131165221;
+			// aapt resource value: 0x7F060004
+			public const int RB2 = 2131099652;
 			
-			// aapt resource value: 0x7F070026
-			public const int radioGroup1 = 2131165222;
+			// aapt resource value: 0x7F060005
+			public const int RB3 = 2131099653;
 			
-			// aapt resource value: 0x7F070003
-			public const int RB1 = 2131165187;
+			// aapt resource value: 0x7F060006
+			public const int RB4 = 2131099654;
 			
-			// aapt resource value: 0x7F070004
-			public const int RB2 = 2131165188;
+			// aapt resource value: 0x7F060024
+			public const int relativeLayout1 = 2131099684;
 			
-			// aapt resource value: 0x7F070005
-			public const int RB3 = 2131165189;
+			// aapt resource value: 0x7F060025
+			public const int right_icon = 2131099685;
 			
-			// aapt resource value: 0x7F070006
-			public const int RB4 = 2131165190;
+			// aapt resource value: 0x7F060026
+			public const int right_side = 2131099686;
 			
-			// aapt resource value: 0x7F070027
-			public const int relativeLayout1 = 2131165223;
+			// aapt resource value: 0x7F060027
+			public const int scrollView1 = 2131099687;
 			
-			// aapt resource value: 0x7F070028
-			public const int right_icon = 2131165224;
+			// aapt resource value: 0x7F060028
+			public const int sqlite_id = 2131099688;
 			
-			// aapt resource value: 0x7F070029
-			public const int right_side = 2131165225;
+			// aapt resource value: 0x7F060029
+			public const int text = 2131099689;
 			
-			// aapt resource value: 0x7F07002A
-			public const int scrollView1 = 2131165226;
+			// aapt resource value: 0x7F06002A
+			public const int text2 = 2131099690;
 			
-			// aapt resource value: 0x7F07002B
-			public const int sqlite_id = 2131165227;
+			// aapt resource value: 0x7F06002B
+			public const int time = 2131099691;
 			
-			// aapt resource value: 0x7F07002C
-			public const int text = 2131165228;
+			// aapt resource value: 0x7F06002C
+			public const int title = 2131099692;
 			
-			// aapt resource value: 0x7F07002D
-			public const int text2 = 2131165229;
+			// aapt resource value: 0x7F06002D
+			public const int txtAddName = 2131099693;
 			
-			// aapt resource value: 0x7F07002E
-			public const int time = 2131165230;
+			// aapt resource value: 0x7F06002E
+			public const int txtAddScore = 2131099694;
 			
-			// aapt resource value: 0x7F07002F
-			public const int title = 2131165231;
+			// aapt resource value: 0x7F06002F
+			public const int txtAddWord = 2131099695;
 			
-			// aapt resource value: 0x7F070030
-			public const int txtAddName = 2131165232;
+			// aapt resource value: 0x7F060030
+			public const int txtEditName = 2131099696;
 			
-			// aapt resource value: 0x7F070031
-			public const int txtAddScore = 2131165233;
+			// aapt resource value: 0x7F060031
+			public const int txtEditScore = 2131099697;
 			
-			// aapt resource value: 0x7F070032
-			public const int txtAddWord = 2131165234;
+			// aapt resource value: 0x7F060032
+			public const int txtEditWord = 2131099698;
 			
-			// aapt resource value: 0x7F070033
-			public const int txtEditName = 2131165235;
+			// aapt resource value: 0x7F060033
+			public const int webView1 = 2131099699;
 			
-			// aapt resource value: 0x7F070034
-			public const int txtEditScore = 2131165236;
-			
-			// aapt resource value: 0x7F070035
-			public const int txtEditWord = 2131165237;
-			
-			// aapt resource value: 0x7F070036
-			public const int webView1 = 2131165238;
-			
-			// aapt resource value: 0x7F070007
-			public const int Word = 2131165191;
+			// aapt resource value: 0x7F060007
+			public const int Word = 2131099655;
 			
 			static Id()
 			{
@@ -638,8 +555,8 @@ namespace GuessTheDefinition
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7F080000
-			public const int status_bar_notification_info_maxnum = 2131230720;
+			// aapt resource value: 0x7F070000
+			public const int status_bar_notification_info_maxnum = 2131165184;
 			
 			static Integer()
 			{
@@ -654,47 +571,44 @@ namespace GuessTheDefinition
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7F090000
-			public const int AddScore = 2131296256;
+			// aapt resource value: 0x7F080000
+			public const int AddScore = 2131230720;
 			
-			// aapt resource value: 0x7F090001
-			public const int CustomRowScore = 2131296257;
+			// aapt resource value: 0x7F080001
+			public const int CustomRowScore = 2131230721;
 			
-			// aapt resource value: 0x7F090002
-			public const int EditScore = 2131296258;
+			// aapt resource value: 0x7F080002
+			public const int EditScore = 2131230722;
 			
-			// aapt resource value: 0x7F090003
-			public const int GameScore = 2131296259;
+			// aapt resource value: 0x7F080003
+			public const int GameScore = 2131230723;
 			
-			// aapt resource value: 0x7F090004
-			public const int Main = 2131296260;
+			// aapt resource value: 0x7F080004
+			public const int Main = 2131230724;
 			
-			// aapt resource value: 0x7F090005
-			public const int Menu = 2131296261;
+			// aapt resource value: 0x7F080005
+			public const int Menu = 2131230725;
 			
-			// aapt resource value: 0x7F090006
-			public const int notification_action = 2131296262;
+			// aapt resource value: 0x7F080006
+			public const int notification_action = 2131230726;
 			
-			// aapt resource value: 0x7F090007
-			public const int notification_action_tombstone = 2131296263;
+			// aapt resource value: 0x7F080007
+			public const int notification_action_tombstone = 2131230727;
 			
-			// aapt resource value: 0x7F090008
-			public const int notification_template_custom_big = 2131296264;
+			// aapt resource value: 0x7F080008
+			public const int notification_template_custom_big = 2131230728;
 			
-			// aapt resource value: 0x7F090009
-			public const int notification_template_icon_group = 2131296265;
+			// aapt resource value: 0x7F080009
+			public const int notification_template_icon_group = 2131230729;
 			
-			// aapt resource value: 0x7F09000A
-			public const int notification_template_part_chronometer = 2131296266;
+			// aapt resource value: 0x7F08000A
+			public const int notification_template_part_chronometer = 2131230730;
 			
-			// aapt resource value: 0x7F09000B
-			public const int notification_template_part_time = 2131296267;
+			// aapt resource value: 0x7F08000B
+			public const int notification_template_part_time = 2131230731;
 			
-			// aapt resource value: 0x7F09000C
-			public const int popoutMenuItem = 2131296268;
-			
-			// aapt resource value: 0x7F09000D
-			public const int Web = 2131296269;
+			// aapt resource value: 0x7F08000C
+			public const int Web = 2131230732;
 			
 			static Layout()
 			{
@@ -709,17 +623,14 @@ namespace GuessTheDefinition
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7F0A0000
-			public const int ApplicationName = 2131361792;
+			// aapt resource value: 0x7F090000
+			public const int ApplicationName = 2131296256;
 			
-			// aapt resource value: 0x7F0A0002
-			public const int empty = 2131361794;
+			// aapt resource value: 0x7F090001
+			public const int Hello = 2131296257;
 			
-			// aapt resource value: 0x7F0A0001
-			public const int Hello = 2131361793;
-			
-			// aapt resource value: 0x7F0A0003
-			public const int status_bar_notification_info_overflow = 2131361795;
+			// aapt resource value: 0x7F090002
+			public const int status_bar_notification_info_overflow = 2131296258;
 			
 			static String()
 			{
@@ -734,29 +645,29 @@ namespace GuessTheDefinition
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7F0B0000
-			public const int TextAppearance_Compat_Notification = 2131427328;
+			// aapt resource value: 0x7F0A0000
+			public const int TextAppearance_Compat_Notification = 2131361792;
 			
-			// aapt resource value: 0x7F0B0001
-			public const int TextAppearance_Compat_Notification_Info = 2131427329;
+			// aapt resource value: 0x7F0A0001
+			public const int TextAppearance_Compat_Notification_Info = 2131361793;
 			
-			// aapt resource value: 0x7F0B0002
-			public const int TextAppearance_Compat_Notification_Line2 = 2131427330;
+			// aapt resource value: 0x7F0A0002
+			public const int TextAppearance_Compat_Notification_Line2 = 2131361794;
 			
-			// aapt resource value: 0x7F0B0003
-			public const int TextAppearance_Compat_Notification_Time = 2131427331;
+			// aapt resource value: 0x7F0A0003
+			public const int TextAppearance_Compat_Notification_Time = 2131361795;
 			
-			// aapt resource value: 0x7F0B0004
-			public const int TextAppearance_Compat_Notification_Title = 2131427332;
+			// aapt resource value: 0x7F0A0004
+			public const int TextAppearance_Compat_Notification_Title = 2131361796;
 			
-			// aapt resource value: 0x7F0B0005
-			public const int Theme_Custom = 2131427333;
+			// aapt resource value: 0x7F0A0005
+			public const int Theme_Custom = 2131361797;
 			
-			// aapt resource value: 0x7F0B0006
-			public const int Widget_Compat_NotificationActionContainer = 2131427334;
+			// aapt resource value: 0x7F0A0006
+			public const int Widget_Compat_NotificationActionContainer = 2131361798;
 			
-			// aapt resource value: 0x7F0B0007
-			public const int Widget_Compat_NotificationActionText = 2131427335;
+			// aapt resource value: 0x7F0A0007
+			public const int Widget_Compat_NotificationActionText = 2131361799;
 			
 			static Style()
 			{
@@ -771,20 +682,20 @@ namespace GuessTheDefinition
 		public partial class Styleable
 		{
 			
-			// aapt resource value: { 0x7F020002,0x7F020003,0x7F020004,0x7F020005,0x7F020006,0x7F020007 }
+			// aapt resource value: { 0x7F010001,0x7F010002,0x7F010003,0x7F010004,0x7F010005,0x7F010006 }
 			public static int[] FontFamily = new int[] {
-					2130837506,
-					2130837507,
-					2130837508,
-					2130837509,
-					2130837510,
-					2130837511};
+					2130771969,
+					2130771970,
+					2130771971,
+					2130771972,
+					2130771973,
+					2130771974};
 			
-			// aapt resource value: { 0x7F020001,0x7F020008,0x7F020009 }
+			// aapt resource value: { 0x7F010000,0x7F010007,0x7F010008 }
 			public static int[] FontFamilyFont = new int[] {
-					2130837505,
-					2130837512,
-					2130837513};
+					2130771968,
+					2130771975,
+					2130771976};
 			
 			// aapt resource value: 0x0
 			public const int FontFamilyFont_font = 0;
@@ -813,29 +724,6 @@ namespace GuessTheDefinition
 			// aapt resource value: 0x5
 			public const int FontFamily_fontProviderQuery = 5;
 			
-			// aapt resource value: { 0x7F020000,0x7F02000A,0x7F02000B,0x7F02000C,0x7F02000D }
-			public static int[] SatelliteMenu = new int[] {
-					2130837504,
-					2130837514,
-					2130837515,
-					2130837516,
-					2130837517};
-			
-			// aapt resource value: 0x0
-			public const int SatelliteMenu_closeOnClick = 0;
-			
-			// aapt resource value: 0x1
-			public const int SatelliteMenu_itemsAngle = 1;
-			
-			// aapt resource value: 0x2
-			public const int SatelliteMenu_mainImage = 2;
-			
-			// aapt resource value: 0x3
-			public const int SatelliteMenu_radius = 3;
-			
-			// aapt resource value: 0x4
-			public const int SatelliteMenu_speed = 4;
-			
 			static Styleable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -849,8 +737,8 @@ namespace GuessTheDefinition
 		public partial class Xml
 		{
 			
-			// aapt resource value: 0x7F0D0000
-			public const int xamarin_essentials_fileprovider_file_paths = 2131558400;
+			// aapt resource value: 0x7F0C0000
+			public const int xamarin_essentials_fileprovider_file_paths = 2131492864;
 			
 			static Xml()
 			{
