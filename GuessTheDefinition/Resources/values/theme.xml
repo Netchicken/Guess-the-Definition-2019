@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="theme_custom_background">?android:attr/colorFocusedHighlight</color><color name="theme_holo_light_background">#ffa7dae2</color>
+  <style name="Theme.Custom" parent="@android:style/Theme.Holo.Light">
+    <item name="android:colorButtonNormal">#ffe6ee9c</item>
+  <item name="android:colorPrimary">@android:color/holo_blue_dark</item>
+    <item name="android:colorPrimaryDark">@android:color/holo_blue_dark</item>
+  <item name="android:textColorPrimary">#fff25f25</item><item name="android:textColorSecondary">#ff2ad241</item></style>
+</resources>
