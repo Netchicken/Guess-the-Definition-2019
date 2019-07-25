@@ -10,30 +10,31 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace GuessTheDefinition {
-    internal class Menu : Activity {
+namespace GuessTheDefinition
+{
+    internal class Menu : Activity
+    {
 
 
         //Adds Add to the Menu in the top right of your screen.
         //https://developer.xamarin.com/api/type/Android.Views.IMenu/
         //https://developer.xamarin.com/samples/mobile/StandardControls/
-        public override bool OnCreateOptionsMenu(IMenu menu) {
-            menu.Add("Load the Menu");
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
             menu.Add("All Scores");
             menu.Add("Play a Game");
             menu.Add("Add New Score");
             menu.Add("I'm bored");
             menu.Add("Open A Browser");
             return base.OnPrepareOptionsMenu(menu);
-            }
+        }
         //When you choose Add from the Menu run the Add Activity
-        public override bool OnOptionsItemSelected(IMenuItem item) {
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
             var itemTitle = item.TitleFormatted.ToString();
 
-            switch (itemTitle) {
-                case "Load the Menu":
-                    StartActivity(typeof(CustomMenu));
-                    break;
+            switch (itemTitle)
+            {
                 case "All Scores":
                     StartActivity(typeof(Scores));
                     break;
@@ -55,13 +56,13 @@ namespace GuessTheDefinition {
                     var intent = new Intent(Intent.ActionView, uri);
                     StartActivity(intent);
                     break;
-                }
-            return base.OnOptionsItemSelected(item);
             }
-
-
-
-
-
+            return base.OnOptionsItemSelected(item);
         }
+
+
+
+
+
     }
+}

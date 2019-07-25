@@ -24,7 +24,7 @@ namespace GuessTheDefinition
         EditText txtAddScore;
         EditText txtAddName;
         EditText txtAddWord;
-        private scoring myScore;
+        private tblscoring myScore;
         DatabaseManager db = new DatabaseManager();
         private string tag = "aaaaa";
 

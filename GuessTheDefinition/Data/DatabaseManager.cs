@@ -23,41 +23,84 @@ namespace GuessTheDefinition.Data
             DBConnect();
         }
 
-        public List<scoring> ViewAll()
-        {
-            try
-            {
-                //SQLiteConnection db = new SQLiteConnection(System.IO.Path.Combine(Android.OS.Environment.ExternalStorageDirectory.ToString(), "Scoring.sqlite"));
 
-                return conn.Query<scoring>("SELECT * FROM SelectDescScores");
-            }
-            catch (Exception e)
-            {
-                Log.Info(tag, "ERROR Did the DB move across??:" + e.Message);
-                return null;
-            }
-        }
 
         private void DBConnect()
         {
-
             databaseName = "Scoring.sqlite";
-            databasePath = Path.Combine(Xamarin.Essentials.FileSystem.AppDataDirectory, databaseName); // Assets folder
+         //   databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),databaseName);
+         
+            databasePath = Path.Combine(Xamarin.Essentials.FileSystem.AppDataDirectory, databaseName);
 
 
-            if (databasePath != null)
+            //https://github.com/praeclarum/sqlite-net
+            try
             {
-                conn = new SQLiteConnection(databasePath);
+                if (databasePath != null) //this is dumb, I can see there is a path just above this line
+                {
+
+                    conn = new SQLiteConnection(databasePath);
+                    conn.CreateTable<tblscoring>();
+
+                    if (TestConnection())
+                    {
+                        Log.Info(tag, "SUCCESS " + databasePath);  
+                    }
+
+
+                  
+                   
+                    return;
+                }
+                Log.Info(tag, "NO CONNECTION DB  " + databasePath);
             }
-            else
+
+            catch (Exception e)
             {
+                Log.Info(tag, "ERROR Did the DB move across??: " + e.Message);
                 // Initializes a new instance of the Database.
                 // if the database doesn't exist, it will create the database and all the tables.
                 // Add more tables to CreateTable when needed
-                //  conn.CreateTable<tblToDo>();
+                // conn.CreateTable<tblscoring>();
             }
         }
 
+
+        public bool TestConnection()
+        {
+            try
+            {
+               conn.Query<tblscoring>("SELECT * FROM tblscoring");
+
+                return true;
+                // return conn.Table<tblscoring>().ToList();
+
+            }
+            catch (Exception e)
+            {
+                Log.Info(tag, "Test Connection Error: " + e.Message);
+                return false;
+            }
+        }
+
+
+
+
+        public List<tblscoring> ViewAll()
+        {
+            try
+            {
+                //  return conn.Query<tblscoring>("SELECT * FROM SelectDescScores");
+                return conn.Query<tblscoring>("SELECT * FROM tblscoring");
+                // return conn.Table<tblscoring>().ToList();
+
+            }
+            catch (Exception e)
+            {
+                Log.Info(tag, "ViewAll Error: " + e.Message);
+                return null;
+            }
+        }
         public void AddItem()
         {
 
@@ -66,7 +109,7 @@ namespace GuessTheDefinition.Data
 
             try
             {
-                var AddThis = new scoring
+                var AddThis = new tblscoring
                 {
                     name = Words.Name,
                     score = Words.Score,
@@ -75,7 +118,7 @@ namespace GuessTheDefinition.Data
 
                 conn.Insert(AddThis);
 
-                //   db.Execute("INSERT INTO scoring(name, score, word) VALUES(?1,? 2,? 3))
+                //   db.Execute("INSERT INTO tblscoring(name, score, word) VALUES(?1,? 2,? 3))
                 Log.Info(tag, "Data Added " + AddThis);
 
             }
@@ -92,7 +135,7 @@ namespace GuessTheDefinition.Data
                 //http://stackoverflow.com/questions/14007891/how-are-sqlite-records-updated
 
 
-                var EditThis = new scoring
+                var EditThis = new tblscoring
                 {
                     id = id,
                     name = name,
@@ -103,7 +146,7 @@ namespace GuessTheDefinition.Data
                 conn.Update(EditThis);
 
                 //or this
-                //  db.Execute("UPDATE scoring Set name = ?, score =, WHERE ID = ?", name, score, word, id);
+                //  db.Execute("UPDATE tblscoring Set name = ?, score =, WHERE ID = ?", name, score, word, id);
 
             }
             catch (Exception e)
@@ -119,7 +162,7 @@ namespace GuessTheDefinition.Data
             //https://developer.xamarin.com/guides/cross-platform/application_fundamentals/data/part_3_using_sqlite_orm/
             try
             {
-                conn.Delete<scoring>(listid);
+                conn.Delete<tblscoring>(listid);
 
             }
             catch (Exception ex)

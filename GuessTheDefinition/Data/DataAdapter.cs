@@ -6,19 +6,19 @@ using GuessTheDefinition.Models;
 
 namespace GuessTheDefinition.Data
 {
-    public class DataAdapter : BaseAdapter<scoring>
+    public class DataAdapter : BaseAdapter<tblscoring>
     {
         private readonly Activity context;
 
-        private readonly List<scoring> items; //make a list of items using the scoring
+        private readonly List<tblscoring> items; //make a list of items using the tblscoring
 
-        public DataAdapter(Activity context, List<scoring> items)
+        public DataAdapter(Activity context, List<tblscoring> items)
         {//pass that list and the context to the DA
             this.context = context;
             this.items = items;
         }
 
-        public override scoring this[int position] {//return an item at this position
+        public override tblscoring this[int position] {//return an item at this position
             get { return items[position]; }
         }
 

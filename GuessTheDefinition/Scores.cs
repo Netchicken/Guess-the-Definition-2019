@@ -18,9 +18,9 @@ namespace GuessTheDefinition
     {
         //we need this so we can copy the DB across to the phone or emulator......
 
-        // scoring myScoring = new scoring();
+        // tblscoring myScoring = new tblscoring();
         ListView ListScores;
-        List<scoring> myList;
+        List<tblscoring> myList;
         private string tag = "aaaaa";
         private Button BackToGame;
         DatabaseManager myDbManager = new DatabaseManager();
@@ -39,11 +39,12 @@ namespace GuessTheDefinition
             ListScores = FindViewById<ListView>(Resource.Id.listView1);
             BackToGame = FindViewById<Button>(Resource.Id.BtnBackToGame);
             Log.Info(tag, "resource loaded");
-            myList = myDbManager.ViewAll();
-            ListScores.Adapter = new DataAdapter(this, myList);
+
+
             ListScores.ItemClick += OnListScores_Click;
             BackToGame.Click += BackToGame_Click;
-
+            myList = myDbManager.ViewAll();
+            ListScores.Adapter = new DataAdapter(this, myList);
         }
 
         private void BackToGame_Click(object sender, EventArgs e)
@@ -100,9 +101,9 @@ namespace GuessTheDefinition
         protected override void OnResume()
         {
             base.OnResume();
-            myDbManager = new DatabaseManager();
-            myList = myDbManager.ViewAll();
-            ListScores.Adapter = new DataAdapter(this, myList);
+            //myDbManager = new DatabaseManager();
+            //myList = myDbManager.ViewAll();
+            //ListScores.Adapter = new DataAdapter(this, myList);
         }
 
     }

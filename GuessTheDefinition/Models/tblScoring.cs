@@ -3,7 +3,7 @@ using SQLite;
 
 namespace GuessTheDefinition.Models
 {
-    public class scoring
+    public class tblscoring
     {
         [PrimaryKey, AutoIncrement]  //this is really important!
         public int id { get; set; }

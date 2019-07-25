@@ -42,7 +42,7 @@ namespace GuessTheDefinition
             Log.Info(tag, "Started to generate tag");
             Initialize();
             LoadDic();
-            //   CopyTheDB();
+            // CopyTheDB();
 
 
         }
@@ -303,7 +303,6 @@ namespace GuessTheDefinition
         //https://developer.xamarin.com/samples/mobile/StandardControls/
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            menu.Add("Load the Menu");
             menu.Add("All Scores");
             menu.Add("Play a Game");
             menu.Add("Add New Score");
@@ -318,9 +317,7 @@ namespace GuessTheDefinition
 
             switch (itemTitle)
             {
-                case "Load the Menu":
-                    StartActivity(typeof(CustomMenu));
-                    break;
+
                 case "All Scores":
                     StartActivity(typeof(Scores));
                     break;
@@ -350,7 +347,10 @@ namespace GuessTheDefinition
         private void CopyTheDB()
         {
             string dbName = "Scoring.sqlite";
-            string dbPath = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.ToString(), dbName);
+            string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments),
+                 dbName);
+            //
+            // string dbPath = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.ToString(), dbName);
             // Check if your DB has already been extracted. If the file does not exist move it
             //    if (!File.Exists(dbPath)) {
 
